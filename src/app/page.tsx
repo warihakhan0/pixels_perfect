@@ -96,9 +96,15 @@ export default function Home() {
       {/* New arrival starts */}
       {/* heading */}
       <div className="">
-        <div>
-          <h1 className="font-extrabold m-10 text-xl md:text-3xl">New Arrivals</h1>
-        </div>
+      <div className="relative">
+        <h1 className="font-black text-[22.8px] my-5 mx-3 relative z-10">
+          New Arrivals
+        </h1>
+        <div
+          className="absolute bg-[#EBD96B] w-[100px] h-[10px] rounded-tl-lg rounded-br-lg top-5 left-20"
+          style={{ transform: "rotate(-10deg)" }}
+        ></div>
+      </div>
         <div className="place-items-center md:flex-row md:justify-between m-10 flex-col flex">
         <Card
       imageSource={grey}
@@ -120,11 +126,15 @@ export default function Home() {
       {/* slae ends */}
       {/* youngs fav */}
       <div>
-        <div>
-          <h1 className="font-extrabold text-xl lg:text-3xl p-4 pt-10">
-            Young&apos;s Favourite
-          </h1>
-        </div>
+          <div className="relative">
+        <h1 className="font-extrabold text-xl lg:text-3xl p-4 pt-10 relative z-10">
+         Young&apos;s Favourite
+        </h1>
+        <div
+          className="absolute bg-[#EBD96B] w-[100px] h-[10px] rounded-tl-lg rounded-br-lg top-16 left-44"
+          style={{ transform: "rotate(-10deg)" }}
+        ></div>
+      </div>
         <div className="mx-20 flex flex-col md:flex-row md:justify-between">
           <Flash
           imageSource={young1}
@@ -141,7 +151,7 @@ export default function Home() {
       <div className="flex flex-row justify-between p-10 m-10">
        <div className="w-2/4 flex flex-col justify-center">
        <h1 className="text-2xl md:text-4xl font-extrabold mb-4">DOWNLOAD APP & GET THE VOUCHER!</h1>
-       <p className="font-medium mb-4 text-sm">Get 30% off for first transaction using Rondovision mobile app for now.</p>
+       <p className="font-thin mb-4 text-sm w-2/4">Get 30% off for first transaction using Rondovision mobile app for now.</p>
        <div>
         <Image src={app} width={300} alt="app" />
        </div>
