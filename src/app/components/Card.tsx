@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticImageData } from 'next/image'
 import Image from "next/image"
-import arrow from "../Arrow 3.png"
 interface Cardprops{
     imageSource:StaticImageData,
 
